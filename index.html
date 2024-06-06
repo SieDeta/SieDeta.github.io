@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- 
+    - primary meta tags
+  -->
+    <title>Deta Dirganjaya</title>
+    <meta name="title" content="Deta Dirganjaya" />
+    <meta name="description" content="This is Deta's personal portfolio" />
+
+    <!-- 
+    - favicon
+  -->
+    <link rel="shortcut icon" href="./logo.png" type="image/svg+xml" />
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet" />
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- 
+    - preload images
+  -->
+    <link rel="preload" as="image" href="./assets/images/hero-banner.jpg" />
+    <link rel="preload" as="image" href="./assets/images/Blog.svg" />
+
+    <!-- 
+      EmailJS
+     -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "2ezDDT7ezKb1nH7-y",
+        });
+      })();
+    </script>
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <!-- 
+    - #HEADER
+  -->
+
+    <header class="header" data-header>
+      <div class="container">
+        <a href="#" class="logo">
+          <img src="./assets/images/banner-deta.png" width="64" height="24" alt="Deta home" />
+        </a>
+
+        <nav class="navbar" data-navbar>
+          <div class="navbar-top">
+            <a href="#" class="logo">
+              <img src="./assets/images/banner-deta-light.png" width="64" height="24" alt="Deta home" />
+            </a>
+
+            <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+              <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+            </button>
+          </div>
+
+          <ul class="navbar-list">
+            <li>
+              <a href="#" class="navbar-link">Home</a>
+            </li>
+
+            <li>
+              <a href="#about" class="navbar-link">About</a>
+            </li>
+
+            <li>
+              <a href="#projects" class="navbar-link">Projects</a>
+            </li>
+
+            <li>
+              <a href="#contact" class="navbar-link">Contact</a>
+            </li>
+          </ul>
+
+          <div class="wrapper">
+            <a href="mailto:deta.semarang@email.com" class="contact-link">deta.semarang@email.com</a>
+
+            <a href="tel:+6282136681582" class="contact-link">+62 821 3668 1582</a>
+          </div>
+
+          <ul class="social-list">
+            <li>
+              <a href="https://github.com/SieDeta" class="social-link">
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.linkedin.com/in/detadirganjaya/" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://discord.gg/4U6qNzSTTK" class="social-link">
+                <ion-icon name="logo-discord"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.instagram.com/siedeta/" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.youtube.com/@detadir" class="social-link">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+          <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <div class="overlay" data-nav-toggler data-overlay></div>
+      </div>
+    </header>
+
+    <main>
+      <article>
+        <!-- 
+        - #HERO
+      -->
+
+        <section class="section hero" aria-label="home">
+          <div class="container">
+            <figure class="hero-banner">
+              <img src="./assets/images/avatar-deta.png" width="560" height="540" alt="Deta" class="w-100" data-reveal="top" />
+            </figure>
+
+            <div class="hero-content">
+              <h1 class="h1 hero-title" data-reveal="top" data-reveal-delay="0.5s">I'm Data Scientist & Machine Learning Engineer.</h1>
+
+              <p class="section-text" data-reveal="top" data-reveal-delay="0.75s">
+                Hello! I'm Deta, a freelancer in the field of data science and machine learning based in Indonesia. I’m very passionate about the work that I do. If you have problems or challenges for me please click contact below.
+              </p>
+
+              <div class="btn-wrapper" data-reveal="top" data-reveal-delay="1s">
+                <a href="./cv-resume-sie-deta-dirganjaya.pdf" class="btn btn-primary" target="_blank">Download CV</a>
+
+                <a href="#contact" class="btn btn-secondary">Contact Me</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 
+        - #ABOUT
+      -->
+
+        <section id="about" class="section about" aria-label="about">
+          <div class="container">
+            <div class="wrapper">
+              <div class="content-container" data-reveal="left">
+                <div>
+                  <h2 class="h2 section-title">What I Do?</h2>
+                  <p class="section-text">
+                    As a freelancer specializing in data science and machine learning, I have the expertise to transform data into actionable insights and innovative solutions. I don't just stop at data analysis; I also have the capability
+                    to develop web-based applications, complete with appealing designs and databases tailored to your needs.
+                    <b>With a combination of my technical skills and creativity, I am ready to help you optimize the potential of your data to achieve your business goals.</b>
+                  </p>
+                </div>
+              </div>
+
+              <div class="slider-container" data-reveal="right">
+                <div class="slider">
+                  <div class="slide-track">
+                    <div class="slide"><img src="./assets/images/certificate_btng_mobile.png" alt="" /></div>
+                    <div class="slide"><img src="./assets/images/certificate_btng_web.png" alt="" /></div>
+                    <div class="slide"><img src="./assets/images/international.png" alt="" /></div>
+                    <div class="slide"><img src="./assets/images/entrepeneur.png" alt="" /></div>
+                    <div class="slide"><img src="./assets/images/leadership.png" alt="" /></div>
+                    <div class="slide"><img src="./assets/images/public_speaking.png" alt="" /></div>
+                    <div class="slide"><img src="./assets/images/workshop.jpg" alt="" /></div>
+                    <div class="slide"><img src="./assets/images/udemy.jpg" alt="" /></div>
+
+                    <!-- SAME SLIDE -->
+                    <div class="slide"><img src="./assets/images/certificate_btng_mobile.png" alt="" /></div>
+                    <div class="slide"><img src="./assets/images/certificate_btng_web.png" alt="" /></div>
+                    <div class="slide"><img src="./assets/images/international.png" alt="" /></div>
+                    <div class="slide"><img src="./assets/images/entrepeneur.png" alt="" /></div>
+                    <div class="slide"><img src="./assets/images/leadership.png" alt="" /></div>
+                    <div class="slide"><img src="./assets/images/public_speaking.png" alt="" /></div>
+                    <div class="slide"><img src="./assets/images/workshop.jpg" alt="" /></div>
+                    <div class="slide"><img src="./assets/images/udemy.jpg" alt="" /></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <ul class="grid-list">
+              <li data-reveal="bottom">
+                <div class="about-card">
+                  <div class="card-icon">
+                    <img src="./assets/images/data.png" width="52" height="52" loading="lazy" alt="web design icon" />
+                  </div>
+
+                  <h3 class="h4 card-title">Data Science</h3>
+
+                  <p class="card-text">Experienced in deep data analysis, predictive modeling, data cleansing, integration models, interactive data visualization, training, monitoring models, and service customization.</p>
+                </div>
+              </li>
+
+              <li data-reveal="bottom" data-reveal-delay="0.25s">
+                <div class="about-card">
+                  <div class="card-icon">
+                    <img src="./assets/images/ai.png" width="52" height="52" loading="lazy" alt="mobile design icon" />
+                  </div>
+
+                  <h3 class="h4 card-title">Machine Learning</h3>
+
+                  <p class="card-text">Experienced in predictive model development, data processing, algorithm optimization, model implementation, system integration, training, performance monitoring, and solution customization.</p>
+                </div>
+              </li>
+
+              <li data-reveal="bottom" data-reveal-delay="0.5s">
+                <div class="about-card">
+                  <div class="card-icon">
+                    <img src="./assets/images/database.png" width="52" height="52" loading="lazy" alt="web development icon" />
+                  </div>
+
+                  <h3 class="h4 card-title">Database</h3>
+
+                  <p class="card-text">Experienced in database design, management and maintenance, performance optimization, data migration, backup and recovery, data security, and system integration.</p>
+                </div>
+              </li>
+
+              <li data-reveal="bottom" data-reveal-delay="0.75s">
+                <div class="about-card">
+                  <div class="card-icon">
+                    <img src="./assets/images/web.png" width="52" height="52" loading="lazy" alt="web seo icon" />
+                  </div>
+
+                  <h3 class="h4 card-title">Website Development</h3>
+
+                  <p class="card-text">Experienced in creating responsive designs, front-end and back-end development, API integration, SEO optimization, web security, site maintenance, as well as custom feature development.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- 
+        - #PROJECT
+      -->
+
+        <section id="projects" class="section project" aria-labelledby="project-label">
+          <div class="container">
+            <div class="title-wrapper" data-reveal="top">
+              <div>
+                <h2 class="h2 section-title" id="project-label">Latest Projects</h2>
+
+                <p class="section-text">Check out some of my latest projects with creative ideas.</p>
+              </div>
+
+              <a href="https://github.com/SieDeta" class="btn btn-secondary">See All Projects</a>
+            </div>
+
+            <ul class="grid-list">
+              <li>
+                <div class="project-card project-card-1" style="background-color: #f8f5fb">
+                  <div class="card-content" data-reveal="left">
+                    <p class="card-tag" style="color: #a07cc5">Machine Learning</p>
+
+                    <h3 class="h3 card-title">Facial Expression Recognition</h3>
+
+                    <p class="card-text">Build a real-time face emotion detection application using a deep-learning CNN model, OpenCV, streamlit-webrtc, and the streamlit framework.</p>
+
+                    <a href="https://github.com/SieDeta/deteksi-ekspresi-wajah" class="btn-text" style="color: #a07cc5">
+                      <span class="span">See Project</span>
+
+                      <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                    </a>
+                  </div>
+
+                  <figure class="card-banner" data-reveal="right">
+                    <img src="./assets/images/facial-exp.png" width="650" height="370" loading="lazy" alt="Web Design" class="w-100" />
+                  </figure>
+                </div>
+              </li>
+
+              <li>
+                <div class="project-card project-card-2" style="background-color: #f1f5fd">
+                  <div class="card-content" data-reveal="right">
+                    <p class="card-tag" style="color: #3f78e0">Data Science</p>
+
+                    <h3 class="h3 card-title">Indonesian UMR Salary Predictions</h3>
+
+                    <p class="card-text">Build an Indonesian UMR Salary Predictions application using the SARIMA algorithm by analyzing and modeling Indonesian UMR time series data for 1997-2002 and the streamlit framework.</p>
+
+                    <a href="https://github.com/SieDeta/prediksi_umr_indonesia" class="btn-text" style="color: #3f78e0">
+                      <span class="span">See Project</span>
+
+                      <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                    </a>
+                  </div>
+
+                  <figure class="card-banner" data-reveal="left">
+                    <img src="./assets/images/sarima.png" width="600" height="367" loading="lazy" alt="Web Design" class="w-100" />
+                  </figure>
+                </div>
+              </li>
+
+              <li>
+                <div class="project-card project-card-3" style="background-color: #f5faf7">
+                  <div class="card-content" data-reveal="left">
+                    <p class="card-tag" style="color: #7cb798">Data Science</p>
+
+                    <h3 class="h3 card-title">Item Pair Promo Maker</h3>
+
+                    <p class="card-text">
+                      Building an application that can make recommendations for item pair promotions based on private transaction data from CV Sanjaya Utama with the aim of increasing company revenue. This application was built using the
+                      Association method, Apriori algorithm, and Streamlit framework.
+                    </p>
+
+                    <a href="https://github.com/SieDeta/cv-sanjaya-utama-apriori" class="btn-text" style="color: #7cb798">
+                      <span class="span">See Project</span>
+
+                      <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                    </a>
+                  </div>
+
+                  <figure class="card-banner" data-reveal="right">
+                    <img src="./assets/images/apriori.png" width="600" height="367" loading="lazy" alt="Web Design" class="w-100" />
+                  </figure>
+                </div>
+              </li>
+
+              <li>
+                <div class="project-card project-card-4" style="background-color: #fcf4f6">
+                  <div class="card-content" data-reveal="left">
+                    <p class="card-tag" style="color: #d16b86">Web Development</p>
+
+                    <h3 class="h3 card-title">E-commerce Application</h3>
+
+                    <p class="card-text">
+                      Building an E-commerce Application for TokoTangga Johar which specifically wanted a design that was simple and easy to use. The UI UX of the guest and admin pages was built using HTML, CSS, Javascript with the
+                      Bootstrap framework.Database setup uses PHP with the Laravel framework, and the database uses MySQL.
+                    </p>
+
+                    <a href="https://github.com/SieDeta/website-ecommerce-toko-tangga-johar" class="btn-text" style="color: #d16b86">
+                      <span class="span">See Project</span>
+
+                      <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                    </a>
+                  </div>
+
+                  <figure class="card-banner" data-reveal="right">
+                    <img src="./assets/images/tokotangga.png" width="620" height="370" loading="lazy" alt="Mobile Design" class="w-100" />
+                  </figure>
+                </div>
+              </li>
+
+              <li>
+                <div class="project-card project-card-4" style="background-color: #a38cbd31">
+                  <div class="card-content" data-reveal="left">
+                    <p class="card-tag" style="color: #8164a3">Database</p>
+
+                    <h3 class="h3 card-title">Encryption Database</h3>
+
+                    <p class="card-text">
+                      Building an encryption system using Caesar Cipher which is connected to a database. This encryption system is simulated in login, register and update activities. The encryption system is built using Caesar logic, PHP,
+                      and the database uses MySql. This encryption can be applied to any website.
+                    </p>
+
+                    <a href="https://github.com/SieDeta/caesar-cipher" class="btn-text" style="color: #8164a3">
+                      <span class="span">See Project</span>
+
+                      <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                    </a>
+                  </div>
+
+                  <figure class="card-banner" data-reveal="right">
+                    <img src="./assets/images/kripto.png" width="620" height="370" loading="lazy" alt="Mobile Design" class="w-100" />
+                  </figure>
+                </div>
+              </li>
+
+              <li>
+                <div class="project-card project-card-4" style="background-color: #f5d77631">
+                  <div class="card-content" data-reveal="left">
+                    <p class="card-tag" style="color: #f1bc0c">Web Development</p>
+
+                    <h3 class="h3 card-title">E-commerce Application</h3>
+
+                    <p class="card-text">
+                      Building an ecommerce application for the Tokoku shoe store that wants a simple and easy to use design. The UI UX of the guest and admin pages was built using HTML, CSS, Javascript and the Bootstrap framework. Database
+                      setup using PHP with the Code Igniter 4 framework.
+                    </p>
+
+                    <a href="https://github.com/SieDeta/ecommerce-CI4" class="btn-text" style="color: #f1bc0c">
+                      <span class="span">See Project</span>
+
+                      <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                    </a>
+                  </div>
+
+                  <figure class="card-banner" data-reveal="right">
+                    <img src="./assets/images/ci4.png" width="620" height="370" loading="lazy" alt="Mobile Design" class="w-100" />
+                  </figure>
+                </div>
+              </li>
+
+              <li>
+                <div class="project-card project-card-4" style="background-color: #609ca72a">
+                  <div class="card-content" data-reveal="left">
+                    <p class="card-tag" style="color: #06acf8">Web Development</p>
+
+                    <h3 class="h3 card-title">Car Rental Application</h3>
+
+                    <p class="card-text">
+                      Building a Car Rental Application for AutoRent with a simple and modern design. The UI/UX of the guest and admin pages was created using HTML, CSS, and JavaScript with Bootstrap framework. Database setup uses PHP with
+                      the Laravel framework, and the database uses MySQL.
+                    </p>
+
+                    <a href="https://github.com/SieDeta/laravel_rent_car" class="btn-text" style="color: #06acf8">
+                      <span class="span">See Project</span>
+
+                      <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                    </a>
+                  </div>
+
+                  <figure class="card-banner" data-reveal="right">
+                    <img src="./assets/images/autorent.png" width="620" height="370" loading="lazy" alt="Mobile Design" class="w-100" />
+                  </figure>
+                </div>
+              </li>
+
+              <li>
+                <div class="project-card project-card-4" style="background-color: #af54542a">
+                  <div class="card-content" data-reveal="left">
+                    <p class="card-tag" style="color: #e42424">Database</p>
+
+                    <h3 class="h3 card-title">Web Server</h3>
+
+                    <p class="card-text">
+                      Building applications that provide services for accessing certain content via certain ports. This web server will later be accessed by the web server using the IP or domain name. The content on the web server is the
+                      contents of a specified directory. Server logs will be saved in the specified folder. This applications was built using Java and JavaFX.
+                    </p>
+
+                    <a href="https://github.com/SieDeta/web-server" class="btn-text" style="color: #e42424">
+                      <span class="span">See Project</span>
+
+                      <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                    </a>
+                  </div>
+
+                  <figure class="card-banner" data-reveal="right">
+                    <img src="./assets/images/web-server.png" width="620" height="370" loading="lazy" alt="Mobile Design" class="w-100" />
+                  </figure>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- 
+        - #CONTACT
+      -->
+
+        <section id="contact" class="section contact" aria-label="contact">
+          <div class="container">
+            <div class="contact-card">
+              <div class="contact-content" data-reveal="left">
+                <div class="card-icon">
+                  <img src="./assets/images/icon-5.svg" width="44" height="44" loading="lazy" alt="envelop icon" />
+                </div>
+
+                <h2 class="h2 section-title">If you like what you see, let's work together.</h2>
+
+                <p class="section-text">I bring rapid solutions to make the life of my clients easier. Have any questions? Reach out to me from this contact form and I will get back to you shortly.</p>
+              </div>
+
+              <form action="mailto:deta.semarang@email.com" method="post" enctype="text/plain" class="contact-form" data-reveal="right">
+                <div class="input-wrapper">
+                  <input type="text" id="name" name="name" placeholder="Name *" required class="input-field" />
+                  <input type="email" id="email" name="email_address" placeholder="Email *" required class="input-field" />
+                </div>
+                <input type="text" id="subject" name="subject" placeholder="Subject *" required class="input-field" />
+
+                <textarea name="message" id="message" placeholder="Message *" required class="input-field"></textarea>
+
+                <button type="submit" onclick="sendMail()" class="btn btn-secondary">Send message</button>
+              </form>
+            </div>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <!-- 
+    - #FOOTER
+  -->
+
+    <footer class="footer">
+      <div class="container">
+        <p class="copyright">© 2024 siedeta. All rights reserved.</p>
+
+        <ul class="social-list">
+          <li>
+            <a href="https://github.com/SieDeta" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.linkedin.com/in/detadirganjaya/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://discord.gg/4U6qNzSTTK" class="social-link">
+              <ion-icon name="logo-discord"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.instagram.com/siedeta/" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.youtube.com/@detadir" class="social-link">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- 
+    - custom js link
+  -->
+    <script src="./assets/js/script.js"></script>
+
+    <!-- 
+    - ionicon link
+  -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
