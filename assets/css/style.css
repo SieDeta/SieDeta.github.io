@@ -539,7 +539,7 @@ body.nav-active {
 @media only screen and (max-width: 450px) {
   .slider-container {
     flex: 1; /* Allows the slider to take available space */
-    max-width: 330px; /* Maximum width for the slider */
+    max-width: 370px; /* Maximum width for the slider */
   }
 }
 
